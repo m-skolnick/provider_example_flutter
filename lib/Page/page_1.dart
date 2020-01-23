@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_help/Provider/data_provider.dart';
 import 'package:provider/provider.dart';
@@ -13,6 +14,13 @@ class Page1 extends StatelessWidget {
           Text(
             'This number will change every second: ${_dataProvider.counter}',
           ),
+          Padding(
+            padding: EdgeInsets.only(top: 12.0),
+          ),
+          RaisedButton(
+            onPressed: () => _dataProvider.resetCounter(),
+            child: Text("Reset Counter"),
+          )
         ],
       ),
     );

@@ -7,6 +7,16 @@ class DataProvider with ChangeNotifier {
     startCounterUpdates();
   }
 
+  resetCounter() {
+    counter = 0;
+    notifyListeners();
+  }
+
+  addToCounter({int count}) {
+    counter += count;
+    notifyListeners();
+  }
+
   startCounterUpdates() async {
     Stream.periodic(Duration(seconds: 1)).listen((_) {
       counter += 1;
