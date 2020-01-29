@@ -17,24 +17,31 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DefaultTabController(
-        length: 2,
-        child: Scaffold(
-          appBar: AppBar(
-            bottom: TabBar(
-              tabs: [
-                Tab(text: "Page 1"),
-                Tab(text: "Page 2"),
-              ],
-            ),
-            title: Text('Same Provider For Multiple Pages'),
-          ),
-          body: TabBarView(
-            children: [
-              Page1(),
-              Page2(),
+      home: MainPage(),
+    );
+  }
+}
+
+class MainPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: TabBar(
+            tabs: [
+              Tab(text: "Page 1"),
+              Tab(text: "Page 2"),
             ],
           ),
+          title: Text('Same Provider For Multiple Pages'),
+        ),
+        body: TabBarView(
+          children: [
+            Page1(),
+            Page2(),
+          ],
         ),
       ),
     );
