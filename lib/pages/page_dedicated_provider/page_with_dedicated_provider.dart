@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_help/pages/page_dedicated_provider/dedicated_provider_for_single_page.dart';
 import 'package:provider/provider.dart';
-
-import 'dedicated_provider_for_single_page.dart';
 
 class PageWithDedicatedProvider extends StatelessWidget {
   @override

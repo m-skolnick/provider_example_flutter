@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_help/page2/page_dedicated_provider2/page_with_dedicated_provider.dart';
-import 'package:flutter_help/page2/pages_sharing_provider2/page_1_shared_provider.dart';
-import 'package:flutter_help/page2/pages_sharing_provider2/page_2_shared_provider.dart';
-import 'package:flutter_help/page2/pages_sharing_provider2/provider_for_shared_pages.dart';
+import 'package:flutter_help/pages/page_dedicated_provider/dedicated_provider_for_single_page.dart';
+import 'package:flutter_help/pages/page_dedicated_provider/page_with_dedicated_provider.dart';
+import 'package:flutter_help/pages/pages_sharing_provider/page_1_shared_provider.dart';
+import 'package:flutter_help/pages/pages_sharing_provider/page_2_shared_provider.dart';
+import 'package:flutter_help/pages/pages_sharing_provider/provider_for_shared_pages.dart';
 import 'package:provider/provider.dart';
-
-import 'page2/page_dedicated_provider2/dedicated_provider_for_single_page.dart';
 
 void main() {
   /*

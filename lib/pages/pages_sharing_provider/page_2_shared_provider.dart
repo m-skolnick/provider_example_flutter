@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_help/page2/pages_sharing_provider2/provider_for_shared_pages.dart';
+import 'package:flutter_help/pages/pages_sharing_provider/provider_for_shared_pages.dart';
 import 'package:provider/provider.dart';
-
-import 'provider_for_shared_pages.dart';
 
 class Page2SharedProvider extends StatelessWidget {
   @override
