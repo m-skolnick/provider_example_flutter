@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_help/Provider/data_provider.dart';
+import 'package:flutter_help/page2/pages_sharing_provider2/provider_for_shared_pages.dart';
 import 'package:provider/provider.dart';
 
-class Page1 extends StatelessWidget {
+class Page1SharedProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _dataProvider = Provider.of<DataProvider>(context);
+    /*
+      Using this method of accessing provider, the entire widget will be rebuilt
+      whenever notifyListeners() is called in the provider.
+
+      Look in `page_with_dedicated_provider` to see how to use `Selector` to
+      select which value needs to change in order to rebuild a widget.
+    */
+    final _dataProvider = Provider.of<SharedProvider>(context);
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

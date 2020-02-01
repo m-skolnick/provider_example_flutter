@@ -1,9 +1,14 @@
 import 'package:flutter/foundation.dart';
 
-class DataProvider with ChangeNotifier {
+/*
+  This provider is an example of using one provider to display the same data in 
+  multiple pages. 
+  Both Page1SharedProvider and Page1SharedProvider are dependant on this provider.
+*/
+class SharedProvider with ChangeNotifier {
   var counter = 0;
 
-  DataProvider() {
+  SharedProvider() {
     startCounterUpdates();
   }
 
